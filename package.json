@@ -2,7 +2,7 @@
   "name": "washedrepent.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://washedrepent.github.io/washedrepent.github.io/",
+  "homepage": "https://washedrepent.github.io/washedrepent.github.io",
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@headlessui/react": "^1.4.0",
