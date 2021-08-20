@@ -26,7 +26,7 @@ function Nav() {
             </div>
             <div className="text-left">
               <h2 className="text-white text-3xl font-semibold justify-start">About Me:</h2>
-              <p className="mt-2 font-bold text-white">I am available for freelance in web development, devops, solutions architecting, api's and serverless related fields. I have 6+ years of professional experience and enjoy challenging myself and broadening my skills. I am a jack of all trades with a focus towards web development. Feel free to reach out or contact me if you are interested in learning more about what I can offer or would like to have me become a part of your project.</p>
+              <p className="mt-2 font-bold text-white">I have 6+ years of professional experience and enjoy challenging myself and broadening my skills. I'm a jack of all trades with a focus towards web development. I am available for freelance in web development, devops, solutions architecting, api's and serverless related fields. Feel free to reach out or contact me if you are interested in learning more about what I can offer or would like to have me become a part of your project.</p>
             </div>
             <div className="text-right  mt-4">
               <a href="#" className="text-2xl font-bold text-white">Links are below :)</a>
