@@ -10,7 +10,10 @@ module.exports = {
         'bled':'#fa6860',
         'mainblue':'#60a5fa',
         'pinky':'#fa60a5',
-      }
+      },
+      backgroundImage:theme=> ({
+        'mainbg': "url('waves-bg.svg')"
+      })
     },
   },
   variants: {
