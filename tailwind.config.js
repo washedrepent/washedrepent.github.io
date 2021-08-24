@@ -8,9 +8,20 @@ module.exports = {
         'teal':  '#60f2fa',
         'blurp': '#6860fa',
         'bled':'#fa6860',
-        'mainblue':'#60a5fa',
+        'mainblue':{
+          'darkest': '#032958',
+          'dark': '#065eca',
+          'DEFAULT':'#60a5fa',
+          'light': '#86bbfb',
+          'lightest': '#bfdbfd'
+        },
         'pinky':'#fa60a5',
-      }
+        'linkedin': '#0a66c2',
+        'upwork': '#14a800',
+      },
+      backgroundImage: theme=> ({
+        'mainbg': "url('./img/waves-bg.svg')"
+      })
     },
   },
   variants: {

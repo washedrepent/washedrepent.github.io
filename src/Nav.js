@@ -5,175 +5,62 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-blue-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                  alt="Workflow"
-                />
+      <div className="relative md:flex">
+        <div className="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+          <a href="#" className="block p-4 text-white font-bold">Better Dev</a>
+          <button className="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+            <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        <aside className="fixed top-0 bottom-0 bg-mainblue-darkest text-white w-64 space-y-6 py-7 px-2 inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+          <a href="#" className="text-white flex items-center space-x-2 px-4">
+            <span className="text-2xl font-extrabold">Hans-Eric Lippke</span>
+          </a>
+          <p className="text-2xl font-extrabold flex items-center">Portfolio/Resume</p>
+          <nav>
+
+            <a href="" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+              About
+            </a>
+            <a href="" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+              Features
+            </a>
+            <a href="" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+              Pricing
+            </a>
+          </nav>
+        </aside>
+        <div className="md:flex flex-col">
+          <div className=" bg-mainblue relative min-h-full h-52">
+            <div className="p-10 text-bold">
+              <p className="text-white ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque volutpat convallis. Proin et neque a erat dictum rhoncus. Aliquam ut pharetra arcu. Quisque venenatis mi magna, sit amet condimentum lectus molestie sit amet. Maecenas porttitor augue eget malesuada sollicitudin. Vestibulum blandit libero nec mi iaculis, ac maximus sem accumsan. Integer mollis urna malesuada lacus vestibulum vestibulum. Etiam in suscipit leo. Fusce arcu leo, tempus sed orci ac, lobortis pharetra eros.
+                Suspendisse massa leo, facilisis eget velit in, hendrerit placerat leo. Cras elementum non sem a fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer at purus a diam cursus egestas. Donec finibus elementum massa, quis sodales metus tincidunt in. Nunc condimentum magna a mauris mattis egestas et non sapien. Aliquam et neque at arcu egestas scelerisque quis vitae ante. Ut non viverra neque.
+              </p>
+            </div>
+            <div className="absolute bottom-0 left-0 w-full leading-none">
+              <svg data-name="Section 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" className="fill-current text-mainblue-dark"></path>
+              </svg>
+            </div>
+          </div>
+          <div className=" bg-mainblue relative min-h-full h-52">
+              <div className="p-10 text-bold">
+                <p className="text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque volutpat convallis. Proin et neque a erat dictum rhoncus. Aliquam ut pharetra arcu. Quisque venenatis mi magna, sit amet condimentum lectus molestie sit amet. Maecenas porttitor augue eget malesuada sollicitudin. Vestibulum blandit libero nec mi iaculis, ac maximus sem accumsan. Integer mollis urna malesuada lacus vestibulum vestibulum. Etiam in suscipit leo. Fusce arcu leo, tempus sed orci ac, lobortis pharetra eros.
+                  Suspendisse massa leo, facilisis eget velit in, hendrerit placerat leo. Cras elementum non sem a fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer at purus a diam cursus egestas. Donec finibus elementum massa, quis sodales metus tincidunt in. Nunc condimentum magna a mauris mattis egestas et non sapien. Aliquam et neque at arcu egestas scelerisque quis vitae ante. Ut non viverra neque.
+                </p>
               </div>
-              <button class="mobile-menu-button p-4 focus:outline-none focus:bg-blurp">
-                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <div className="absolute bottom-0 left-0 w-full leading-none">
+                <svg data-name="Section 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" className="fill-current text-mainblue-dark"></path>
                 </svg>
-                </button>
-              {/*
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="#"
-                    className=" hover:bg-blurp-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Dashboard
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-blue-300 hover:bg-blurp hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Team
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-blue-300 hover:bg-blurp hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Projects
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-blue-300 hover:bg-blurp hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Calendar
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-blue-300 hover:bg-blurp hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Reports
-                  </a>
-                </div>
-              </div>*/}
-            </div>
-            <div className="-mr-2 flex md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                type="button"
-                className="bg-blue-900 inline-flex items-center justify-center p-2 rounded-md text-blue-400 hover:text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                {!isOpen ? (
-                  <svg
-                    className="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <Transition
-          show={isOpen}
-          enter="transition ease-out duration-100 transform"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="transition ease-in duration-75 transform"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#"
-                  className="hover:bg-blue-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Dashboard
-                </a>
-
-                <a
-                  href="#"
-                  className="text-blue-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Team
-                </a>
-
-                <a
-                  href="#"
-                  className="text-blue-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Projects
-                </a>
-
-                <a
-                  href="#"
-                  className="text-blue-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Calendar
-                </a>
-
-                <a
-                  href="#"
-                  className="text-blue-300 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
               </div>
-            </div>
-          )}
-        </Transition>
-      </nav>
-
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-blue-900">Dashboard</h1>
-        </div>
-      </header>
-      <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0">
-            <div className="border-4 border-dashed border-blue-200 rounded-lg h-96"></div>
           </div>
-          {/* <!-- /End replace --> */}
         </div>
-      </main>
+      </div>
     </div> 
   );
 }
