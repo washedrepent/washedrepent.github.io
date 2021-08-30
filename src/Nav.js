@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import logo from "./logo3.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ function Nav() {
         </div>
         <aside className="fixed top-0 bottom-0 bg-mainblue-darkest text-white w-64 space-y-6 py-7 px-2 inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
           <a href="#" className="text-white flex items-center space-x-2 px-4">
-            <span className="text-2xl font-extrabold">Hans-Eric Lippke</span>
+            <img className="" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>
           </a>
           <p className="text-2xl font-extrabold flex items-center">Portfolio/Resume</p>
           <nav>
