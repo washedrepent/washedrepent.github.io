@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from './components/ThemeContext';
+import Background from './components/Background';
+import ModeToggle from './components/ModeToggle';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <Background>
+        <App/> 
+      </Background>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

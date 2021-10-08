@@ -3,6 +3,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundColor:{
+        primary: 'var(--color-bg-primary)',
+        secondary: 'var(--color-bg-secondary)',
+        menuactive: 'var(--color-bg-menu-active)',
+      },
+      textColor:{
+        accent: 'var(--color-text-accent)',
+        primary: 'var(--color-text-primary)',
+        secondary: 'var(--color-text-secondary)',
+        menuactive: 'var(--color-text-menu-active)',
+      },
       colors: {
         'orange': '#fab560',
         'teal':  '#60f2fa',

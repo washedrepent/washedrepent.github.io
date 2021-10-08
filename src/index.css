@@ -2,7 +2,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.dark{
+  --color-bg-primary: #111418;
+  --color-bg-secondary: #393B40;
+  --color-bg-menu-active: #f5f5f5;
+  --color-text-menu-active:#60a5fa;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #bfdbfd;
+  --color-text-accent: #fab560;
+  --color-text-accent2: #fa60a5;
+}
+.light{
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f5f5f5;
+  --color-bg-menu-active:#111418;
+  --color-text-menu-active:#f5f5f5;
+  --color-text-primary: #60a5fa;
+  --color-text-secondary: #434656;
+  --color-text-accent: #6860fa;
+  --color-text-accent2:#fa6860;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

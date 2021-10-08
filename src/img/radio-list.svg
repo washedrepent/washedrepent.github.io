@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g id="rad-lines">
+    <rect x="75" y="48" width="55" height="4.002" style="fill: rgb(165, 165, 165);" id="line1">
+      <title>attline</title>
+    </rect>
+    <rect x="175" y="48" width="55" height="4.002" style="fill: rgb(165, 165, 165);" id="line2">
+      <title>attline</title>
+    </rect>
+    <rect x="275" y="48" width="55" height="4.002" style="fill: rgb(165, 165, 165);" id="line3">
+      <title>attline</title>
+    </rect>
+    <rect x="375" y="48" width="55" height="4.002" style="fill: rgb(165, 165, 165);" id="line4">
+      <title>attline</title>
+    </rect>
+  </g>
+  <g id="rad-circles">
+    <circle style="stroke: rgb(147, 181, 255); paint-order: fill; fill: rgb(255, 255, 255); stroke-width: 5px;" cx="48" cy="50" r="25" id="cir1">
+      <title>cir1</title>
+    </circle>
+    <circle style="stroke: rgb(147, 181, 255); paint-order: fill; fill: rgb(255, 255, 255); stroke-width: 5px;" cx="150" cy="50" r="25" id="cir2">
+      <title>cir2</title>
+    </circle>
+    <circle style="stroke: rgb(147, 181, 255); paint-order: fill; fill: rgb(255, 255, 255); stroke-width: 5px;" cx="250" cy="50" r="25" id="cir3">
+      <title>cir3</title>
+    </circle>
+    <circle style="stroke: rgb(147, 181, 255); paint-order: fill; fill: rgb(255, 255, 255); stroke-width: 5px;" cx="350" cy="50" r="25" id="cir4" bx:origin="1.665 0.451">
+      <title>cir4</title>
+    </circle>
+    <circle style="stroke: rgb(147, 181, 255); paint-order: fill; fill: rgb(255, 255, 255); stroke-width: 5px;" cx="450" cy="50" r="25" id="cir5" bx:origin="1.665 0.451">
+      <title>cir5</title>
+    </circle>
+  </g>
+</svg>
