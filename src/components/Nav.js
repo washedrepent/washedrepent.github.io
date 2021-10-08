@@ -35,19 +35,19 @@ function Nav() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-between sm:items-stretch">
                 <div className="flex-shrink-0 flex items-center">
                   <img className="block lg:hidden h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>
                   <img className="hidden lg:block h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>     
                 </div>
-                <div className="hidden sm:block sm:ml-6">
-                  <div className="flex align-middle space-x-4">
+                <div className="hidden sm:flex sm:ml-6">
+                  <div className="flex items-center space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-menu-active text-menu-active' : 'text-primary hover:bg-secondary hover:text-white',
+                          item.current ? 'bg-menuactive text-menuactive' : 'text-primary hover:bg-menuactive hover:text-menuactive',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -68,7 +68,7 @@ function Nav() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-red-800 text-menu-active' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-menuactive text-menuactive' : 'text-primary hover:bg-menuactive hover:text-menuactive',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
