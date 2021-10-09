@@ -4,10 +4,9 @@ import React from 'react';
 const Background = ( { children } ) =>
 {
     return (
-       
-        <body className="bg-primary transition-all">
+        <main className="transition-all">
             {children}
-        </body>
+        </main>
     )
 }
 

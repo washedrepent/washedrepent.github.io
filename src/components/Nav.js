@@ -54,7 +54,11 @@ function Nav() {
                       >
                         {item.name}
                       </a>
+                     
                     ))}
+                     
+                     <ModeToggle/>
+
                   </div>
                 </div>
               </div>

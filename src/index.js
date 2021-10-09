@@ -11,7 +11,8 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
       <Background>
-        <App/> 
+        <App/>
+        <ModeToggle/> 
       </Background>
     </ThemeProvider>
   </React.StrictMode>,

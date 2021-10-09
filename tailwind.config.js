@@ -31,7 +31,10 @@ module.exports = {
         'upwork': '#14a800',
       },
       backgroundImage: theme=> ({
-        'mainbg': "url('./img/waves-bg.svg')"
+        'mainbg': "url('./img/waves-bg.svg')",
+        'hero1': "url('./img/hero1.svg')",
+        'triangle-dark': "url('./img/triangle-bg-dark.svg')",
+        'triangle-light': "url('./img/triangle-bg-light.svg')",
       })
     },
   },
