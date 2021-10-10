@@ -36,31 +36,31 @@ function Nav() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-between sm:items-stretch">
-                <div className="flex-shrink-0 flex items-center">
-                  <img className="block lg:hidden h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>
-                  <img className="hidden lg:block h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>     
-                </div>
-                <div className="hidden sm:flex sm:ml-6">
-                  <div className="flex items-center space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-menuactive text-menuactive' : 'text-primary hover:bg-menuactive hover:text-menuactive',
-                          'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                     
-                    ))}
-                     
-                     <ModeToggle/>
-
+                <div className="flex-1 flex items-center justify-between sm:items-stretch">
+                  <div className="flex-shrink-0 flex items-center">
+                    <img className="block lg:hidden h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>
+                    <img className="hidden lg:block h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>     
+                  </div>
+                  <div className="hidden sm:flex sm:ml-6">
+                    <div className="flex items-center space-x-4">
+                      {navigation.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className={classNames(
+                            item.current ? 'bg-menuactive text-menuactive' : 'text-primary hover:bg-menuactive hover:text-menuactive',
+                            'px-3 py-2 rounded-md text-sm font-medium'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      
+                      ))}
+                    </div>
                   </div>
                 </div>
+                <ModeToggle/>
               </div>
             </div>
           </div>
