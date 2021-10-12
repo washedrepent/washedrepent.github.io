@@ -1,4 +1,5 @@
 //ThemeContext.js
+//src taken from https://braydoncoyer.dev/blog/how-to-implement-dark-mode-with-tailwind-2/
 import React from 'react';
 
 const getInitialTheme = () => {

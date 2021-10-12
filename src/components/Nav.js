@@ -1,7 +1,8 @@
 import React, { useState, Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import logo from "../img/logo-normal.svg";
+import logolight from "../img/logo-normal.svg";
+import logodark from "../img/logo-dark.svg";
 import ModeToggle from './ModeToggle';
 
 const navigation = [
@@ -38,8 +39,8 @@ function Nav() {
               <div className="flex-1 flex items-center justify-between sm:items-stretch">
                 <div className="flex-1 flex items-center justify-between sm:items-stretch">
                   <div className="flex-shrink-0 flex items-center">
-                    <img className="block lg:hidden h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>
-                    <img className="hidden lg:block h-16 w-auto" src={logo} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>     
+                    <img className="block dark:hidden h-16 w-auto" src={logolight} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>
+                    <img className="hidden dark:block h-16 w-auto" src={logodark} alt="Hans-Eric Lippke's Logo Plan, Build, Achieve"/>     
                   </div>
                   <div className="hidden sm:flex sm:ml-6">
                     <div className="flex items-center space-x-4">

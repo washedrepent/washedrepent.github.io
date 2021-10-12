@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       backgroundColor:{
@@ -9,10 +9,11 @@ module.exports = {
         menuactive: 'var(--color-bg-menu-active)',
       },
       textColor:{
-        accent: 'var(--color-text-accent)',
         primary: 'var(--color-text-primary)',
         secondary: 'var(--color-text-secondary)',
         menuactive: 'var(--color-text-menu-active)',
+        accent: 'var(--color-text-accent)',
+        accent2: 'var(--color-text-accent2)',
       },
       colors: {
         'orange': '#fab560',
@@ -39,7 +40,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display:['dark']
+    },
   },
   plugins: [],
 }

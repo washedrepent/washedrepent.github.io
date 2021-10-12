@@ -17,9 +17,9 @@ const ModeToggle = () => {
 
     return (
       <>
-      <div className="flex justify-center sm:justify-end items-center w-56">
-        <SunIcon className="w-10 text-primary" />
-        <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+      <div className="flex justify-center sm:justify-end items-center w-56 space-x-2">
+        <SunIcon className="w-7 text-orange" />
+        <div class="relative inline-block w-10 align-middle select-none transition duration-200 ease-in">
             <input 
               type="checkbox" 
               name="toggle" 
@@ -30,7 +30,7 @@ const ModeToggle = () => {
             />
             <label for="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
         </div>
-        <MoonIcon className="w-10 text-primary" />
+        <MoonIcon className="w-7 text-blurp" />
           
       </div>
  
