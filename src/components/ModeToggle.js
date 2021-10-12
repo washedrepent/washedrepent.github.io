@@ -2,7 +2,7 @@ import React from 'react';
 import { MoonIcon, SunIcon } from '@heroicons/react/outline';
 import { ThemeContext } from './ThemeContext';
 
-
+//helper function to return true or false value if dark mode is enabled
 function isDarkMode(){
   const storedtheme = window.localStorage.getItem('color-theme');
   console.log(storedtheme);
@@ -12,6 +12,7 @@ function isDarkMode(){
     return false;
   }
 }
+
 const ModeToggle = () => {
     const { theme, setTheme } = React.useContext(ThemeContext);
 
