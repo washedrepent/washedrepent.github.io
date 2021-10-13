@@ -15,7 +15,7 @@
 .light{
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #f5f5f5;
-  --color-bg-menu-active:#111418;
+  --color-bg-menu-active:#393B40;/*#111418*/
   --color-text-menu-active:#f5f5f5;
   --color-text-primary: #60a5fa;
   --color-text-secondary: #434656;
@@ -58,11 +58,16 @@ code {
 }
 
 .toggle-checkbox:checked {
-  @apply: right-0 border-green-400;
+  @apply:right-0 border-green-400;
   right: 0;
-  border-color: #68D391;
+  border-color: theme('colors.orange');
 }
 .toggle-checkbox:checked + .toggle-label {
-  @apply: bg-green-400;
-  background-color: #68D391;
+  @apply:bg-green-400;
+  background-color: theme('colors.orange');
+}
+.mainslogan{
+  @apply:text-5xl text-primary;
+  display: block;
+  position: relative;
 }

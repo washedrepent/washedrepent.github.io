@@ -33,15 +33,19 @@ module.exports = {
       },
       backgroundImage: theme=> ({
         'mainbg': "url('./img/waves-bg.svg')",
-        'hero1': "url('./img/hero1.svg')",
+        'herolight': "url('./img/herolight2.svg')",
+        'herodark': "url('./img/herodark2.svg')",
+        'portrait': "url('./img/portrait.png')",
         'triangle-dark': "url('./img/triangle-bg-dark.svg')",
         'triangle-light': "url('./img/triangle-bg-light.svg')",
+
       })
     },
   },
   variants: {
     extend: {
-      display:['dark']
+      display:['dark'],
+      backgroundImage:['dark'],
     },
   },
   plugins: [],

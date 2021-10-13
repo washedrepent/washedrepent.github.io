@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { ThemeContext } from "./ThemeContext";
 import logolight from "../img/logo-normal.svg";
 import logodark from "../img/logo-dark.svg";
 import ModeToggle from './ModeToggle';
@@ -50,7 +51,7 @@ function Nav() {
                           href={item.href}
                           className={classNames(
                             item.current ? 'bg-menuactive text-menuactive' : 'text-primary hover:bg-menuactive hover:text-menuactive',
-                            'px-3 py-2 rounded-md text-sm font-medium'
+                            'px-3 py-2 rounded-sm text-sm font-medium'
                           )}
                           aria-current={item.current ? 'page' : undefined}
                         >

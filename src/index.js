@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './components/ThemeContext';
 import Background from './components/Background';
-import ModeToggle from './components/ModeToggle';
 
 ReactDOM.render(
   <React.StrictMode>
