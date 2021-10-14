@@ -5,8 +5,8 @@ import { ThemeContext } from './ThemeContext';
 //helper function to return true or false value if dark mode is enabled
 function isDarkMode(){
   const storedtheme = window.localStorage.getItem('color-theme');
-  console.log(storedtheme);
-  if (storedtheme == 'dark') {
+  //console.log(storedtheme);
+  if (storedtheme === 'dark') {
     return true;
   }else{
     return false;
@@ -29,7 +29,7 @@ const ModeToggle = () => {
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               defaultChecked = {isDarkMode()}
             />
-            <label for="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-mainblue-lightest cursor-pointer"></label>
+            <label htmlFor="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-mainblue-lightest cursor-pointer"></label>
         </div>
         <MoonIcon className="w-7 text-blurp" />
           

@@ -12,7 +12,7 @@ import triangleDark from "../img/triangle-bg-dark.svg";
 import triangleLight from "../img/triangle-bg-light.svg";
 
 const TopHero = () => {
-    const { theme, setTheme } = React.useContext(ThemeContext);
+    const { theme } = React.useContext(ThemeContext);
 
     const particlesInit = (main) => {
         //console.log(main);
@@ -24,12 +24,12 @@ const TopHero = () => {
     };
 
     return (
-        <div className="flex relative">
+        <div className="flex relative h-120 md:max-h-half w-full">
             <Particles 
                 id="tsparticles"
                 init={particlesInit}
               
-                className = "main-hero bg-herolight dark:bg-herodark bg-contain h-full"
+                className = "main-hero bg-herolight dark:bg-herodark bg-contain w-full"
                 loaded={particlesLoaded} 
                 options={
                     {
@@ -105,12 +105,12 @@ const TopHero = () => {
             />
 
 
-            <div className="absolute w-full top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="flex md:grid md:grid-cols-2 md:gap-4">
-                    <div className="flex flex-initial flex-wrap space-y-10 self-start justify-end">
-                        <h1 className="text-8xl text-mainblue-darkest dark:text-accent">Hans-Eric Lippke</h1>
-                        <h2 className="text-5xl text-orange dark:text-accent2 w-full">Technology Manager</h2>
-                        <h2 className="text-5xl text-bled dark:text-primary">
+            <div className="absolute w-full h-full top-10">
+                <div className="flex flex-col space-y-10 md:flex-row">
+                    <div className="flex flex-col flex-initial space-y-10 w-full">
+                        <h1 className="flex flex-row justify-center text-5xl lg:text-6xl xl:text-8xl font-bold text-mainblue-darkest dark:text-accent">Hans-Eric Lippke</h1>
+                        <h2 className="flex flex-row justify-center text-3xl md:text-5xl text-orange dark:text-accent2 w-full">Technology Manager</h2>
+                        <h2 className="flex flex-row justify-center text-3xl md:text-5xl text-bled dark:text-primary">
                             <Typewriter
                                 options={{
                                     wrapperClassName: "mainslogan",
@@ -122,13 +122,13 @@ const TopHero = () => {
                             />
                         </h2>
                     </div>
-                    <div className="flex justify-start self-center">   
-                        <img className="w-auto max-h-96 px-32" src={portrait} alt="Picture of Hans-Eric Lippke" />
+                    <div className="flex flex-row w-3/4 justify-start self-center">   
+                        <img className="w-auto max-h-96 px-32" src={portrait} alt="Portrait of Hans-Eric Lippke" />
                     </div>
                 </div>
             </div>
-            <img className="custom-shape-divider-bottom-1633819435 hidden dark:block" src={triangleDark} />
-            <img className="custom-shape-divider-bottom-1633819435 block dark:hidden" src={triangleLight} /> 
+            <img className="custom-shape-divider-bottom-1633819435 hidden dark:block" src={triangleDark} alt="dark triangle for bottom of banner"/>
+            <img className="custom-shape-divider-bottom-1633819435 block dark:hidden" src={triangleLight} alt="light triangle for bottom of banner" /> 
         </div> 
     );
 };

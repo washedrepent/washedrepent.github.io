@@ -39,7 +39,12 @@ module.exports = {
         'triangle-dark': "url('./img/triangle-bg-dark.svg')",
         'triangle-light': "url('./img/triangle-bg-light.svg')",
 
-      })
+      }),
+      fontFamily: {
+        'sans': ['Raleway','ui-sans-serif'],
+        'serif': ['Rokkitt','ui-serif'],
+        'mono': ['Inconsolata','ui-monospace'],
+      }
     },
   },
   variants: {

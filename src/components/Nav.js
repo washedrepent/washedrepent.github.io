@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure, /*Menu, Transition*/ } from "@headlessui/react";
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { ThemeContext } from "./ThemeContext";
+//import { ThemeContext } from "./ThemeContext";
 import logolight from "../img/logo-normal.svg";
 import logodark from "../img/logo-dark.svg";
 import ModeToggle from './ModeToggle';
