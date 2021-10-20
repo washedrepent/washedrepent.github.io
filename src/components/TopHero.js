@@ -127,8 +127,10 @@ const TopHero = () => {
                     </div>
                 </div>
             </div>
-            <img className="custom-shape-divider-bottom-1633819435 hidden dark:block" src={triangleDark} alt="dark triangle for bottom of banner"/>
-            <img className="custom-shape-divider-bottom-1633819435 block dark:hidden" src={triangleLight} alt="light triangle for bottom of banner" /> 
+            <div className="custom-shape-divider-bottom-1633819435" src={triangleDark} alt="dark triangle for bottom of banner">
+                <svg  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" ><path  d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill" fill-opacity="1"></path>
+                </svg>
+            </div>
         </div> 
     );
 };
